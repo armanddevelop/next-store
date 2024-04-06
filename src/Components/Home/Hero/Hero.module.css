@@ -1,0 +1,14 @@
+.heroComponent {
+  margin: 10rem;
+}
+
+.heroComponent > h1 {
+  font-size: 3rem;
+  color: blueviolet;
+  text-align: center;
+}
+.heroComponent > h2 {
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+}

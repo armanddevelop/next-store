@@ -1,9 +1,11 @@
-import styles from "./page.module.css";
+import { Description, Hero, MainProducts } from "app/Components";
 
 export default function Home(): JSX.Element {
   return (
-    <main className={styles.main}>
-      <h1>Hola chue yeye</h1>
+    <main>
+      <Hero />
+      <Description />
+      <MainProducts />
     </main>
   );
 }

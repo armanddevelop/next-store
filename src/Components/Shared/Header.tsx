@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Header = (): JSX.Element => {
+export const Header = (): JSX.Element => {
   return (
     <header>
       <nav>
@@ -16,5 +16,3 @@ const Header = (): JSX.Element => {
     </header>
   );
 };
-
-export default Header;
