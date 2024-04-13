@@ -1,6 +1,12 @@
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import { Header, Footer } from "app/Components";
-const inter = Inter({ subsets: ["latin"] });
+import "app/sass/globals.sass";
+
+const monserratFont = Montserrat({
+  weight: ["100", "300", "500", "700"],
+  style: "normal",
+  subsets: ["latin-ext"],
+});
 
 export default function RootLayout({
   children,
@@ -9,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={monserratFont.className}>
         <Header />
         {children}
         <Footer />
